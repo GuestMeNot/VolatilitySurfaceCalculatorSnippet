@@ -1,14 +1,29 @@
-# Gatherall's SVI Option Surface calculation.
+# Gatheral's SVI Option Surface calculation.
 
-This implementation calculates Option prices using Gatherall's Stochastic
-Volatility Inspired approach.
+This Option Pricing implementation calculates Option prices using Gatheral's Stochastic Volatility Inspired approach.
 
-This approach guarantees no arbitrage.
+This approach guarantees no arbitrage across time and price.
 
-This code was written back when JDK 5 was just becoming popular.
-Date functionality should be updated to the newer JDK Date functionality and tweaking it for performance.
+The theory of SVI approach has been further expanded by showing convergence in the limit to Heston's equations as T
+approaches ∞
 
-This is a snippet of a much larger program. 
-Consequently, Many features not used in this code base are used elsewhere.
+### TODO
+
+This code was written back when JDK 5 was just becoming popular. Date functionality should be updated to the newer JDK
+Date functionality and tweaking it for performance.
+
+### Caveats
+
+This is a snippet of a much larger trading program. Consequently, many features not used in this code base are used
+elsewhere. Also, Unit tests and data are not replicated here because the underlying data is proprietary
+to <a href="https://www.livevol.com/">LiveVol</a>
+
+### Reference
+
+For equations with rationale for in SVI see:
+
+<https://www.tandfonline.com/doi/abs/10.1080/14697688.2013.819986>
+
+
 
  
