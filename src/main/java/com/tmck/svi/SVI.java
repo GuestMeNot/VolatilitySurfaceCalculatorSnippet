@@ -178,10 +178,6 @@ public class SVI {
         // @see eq. 3.1 - p. 5
         double w_i = a + bsqrtpkm;
 
-//		if(Math.abs(w_i) < .01d) {
-//			return 0;
-//		}
-
         if (w_i < 0) {
             return Double.MAX_VALUE;
         }
@@ -361,7 +357,6 @@ public class SVI {
         }
 
         if (impliedVolatility > 1) {
-//			System.err.println("BAD IV : " + date + " dte: " + dte + " currentStrike: " + currentStrike + " IV: " + impliedVolatility);
             impliedVolatility = 1;
         }
 

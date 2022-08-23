@@ -138,8 +138,6 @@ public class BlackScholes {
 
     public static double vanna(OptionData data, double r, boolean setVanna) {
 
-//		double S = data.getCurrentStockPrice();
-//		double X = data.getStrikePrice();
         double dte = data.getDte();
         double v = data.getIV();
 
@@ -487,8 +485,6 @@ public class BlackScholes {
         double d2 = d2(d1, v, dte);
 
         double price = Double.NaN;
-//		double et = Math.exp(-r*T);
-//		double ket = X*et;
         if (isCallOption) {
             price = callOptionPrice(S, X, T, r, d1, d2);
         } else {
